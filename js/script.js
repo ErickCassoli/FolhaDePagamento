@@ -10,14 +10,11 @@ var func = 0;
 var inssFinal = 0;
 var irrfFinal = 0;
 var sInss = 0;
+var sB = Number(document.getElementById('beforeNoon').value)
 
 //BOTOES DE CALCULAR
 calc.addEventListener("click", abrir);
-calc.addEventListener("mouseenter", mouseSim1);
-calc.addEventListener("mouseleave", mouseNao1);
 reset.addEventListener("click", fechar);
-reset.addEventListener("mouseenter", mouseSim2);
-reset.addEventListener("mouseleave", mouseNao2);
 
 //FUNCOES
 function abrir() {
@@ -30,29 +27,16 @@ function abrir() {
 	box1.style.borderRadius = "30px"
 	box1.style.fontSize = "22px"
 	box1.style.lineHeight = "170%"
-	box1.style.animationDuration="1s"
+	box1.style.transitionDuration= "1s"
+	document.getElementById("IRFF").innerHTML =irrfFinal
+	
 }
 function fechar() {
 	//Fechar a box de resultados
 	box1.style.display="none"
-	box1.style.animationDuration="1s"
-	
+	box1.style.transitionDuration= "1s"
 }
-function mouseSim1() {
-	//mudar a estetica do botao de calcular
-	//calc.style.border = "none";
-}
-function mouseNao1() {
-	//mudar a estetica do botao de calcular
-}
-function mouseSim2() {
-	//mudar a estetica do botao de resetar
-	//reset.style.backgroundColor = "yellow";
-}
-function mouseNao2() {
-	//mudar a estetica do botao de resetar
-	//reset.style.background = "green";
-}
+
 
 //calculo inss:
 if (sBruto < 1302.00){

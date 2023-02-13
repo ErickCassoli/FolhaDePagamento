@@ -37,7 +37,7 @@
 					<br />
 					<label for="dependentes">Dependentes:</label><br />
 					<input
-						type="number" name="depentendes" id="dependentes" placeholder="Quantidade de dependentes"/>
+						type="number" name="depentendes" id="dependentes" placeholder="Número de dependentes"/>
 					<br />
 					<input type="checkbox" name="" id="vale" />
 					<label id="check" for="checkbox">Vale transporte incluso</label>
@@ -48,10 +48,31 @@
 				</span>
 				<div id="box1">
 					<h2>RESULTADO:</h2>
+					<table>
+						<tr>
+							<td> Salário bruto</td>
+							<td><script>document.write(sB);</script></td>
+							</tr>
+							<tr>
+								<td> INSS </td>
+								<td id="INSS"></td>
+								</tr>
+							<tr>
+								<td>IRFF</td>
+								<td id="iRFF"> <td>
+							</tr>
+							<tr>
+								<td>Vale transporte</td>
+								<td id="Vt"> </td>
+							</tr>
+							<tr>
+								<td>Salário líquido</td>
+								<td id="sL"> </td>
+							</tr>		
+						</table>
                     <button type="reset" id="reset">
                         <h3>Resetar</h3>
 					<div class="resultado">
-                        
                     </div>
 				</div>
 			</div>
