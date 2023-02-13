@@ -11,7 +11,7 @@ var inssFinal = 0;
 var irrfFinal = 0;
 var sInss = 0;
 var sB = Number(document.getElementById('sB').value)
-
+sB = 
 //BOTOES DE CALCULAR
 calc.addEventListener("click", abrir);
 reset.addEventListener("click", fechar);
