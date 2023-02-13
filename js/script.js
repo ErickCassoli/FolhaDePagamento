@@ -10,7 +10,7 @@ var func = 0;
 var inssFinal = 0;
 var irrfFinal = 0;
 var sInss = 0;
-var sB = Number(document.getElementById('beforeNoon').value)
+var sB = Number(document.getElementById('sB').value)
 
 //BOTOES DE CALCULAR
 calc.addEventListener("click", abrir);
