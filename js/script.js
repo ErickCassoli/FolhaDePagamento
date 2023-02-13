@@ -38,21 +38,6 @@ function fechar() {
 	box1.style.animationDuration="1s"
 	
 }
-function mouseSim1() {
-	//mudar a estetica do botao de calcular
-	//calc.style.border = "none";
-}
-function mouseNao1() {
-	//mudar a estetica do botao de calcular
-}
-function mouseSim2() {
-	//mudar a estetica do botao de resetar
-	//reset.style.backgroundColor = "yellow";
-}
-function mouseNao2() {
-	//mudar a estetica do botao de resetar
-	//reset.style.background = "green";
-}
 
 //calculo inss:
 if (sBruto < 1302.00){
