@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Cálculo folha de pagamento" />
+		<meta name="keywords" content="FOLHA, PAGAMENTO, INSS, IRRF" />
+		<meta name="author" content="Squad" />
+		<link rel="stylesheet" href="./css/style.css    " />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>FOLHA DE PAGAMENTO</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>Cálculo de Folha de Pagamento</h1>
+			</nav>
+		</header>
+		<main>
+			<div class="tudo">
+				<span id="box">
+					<label for="salarioBruto">Salário Bruto:</label><br />
+					<input
+						type="text"
+						name="salarioBruto"
+						id="salarioBruto"
+						placeholder="Digite seu salário"
+					/>
+					<br />
+					<label for="dependentes">Dependentes:</label><br />
+					<input
+						type="text" name="depentendes" id="dependentes" placeholder="Quantidade de dependentes"/>
+					<br />
+					<input type="checkbox" name="" id="vale" />
+					<label id="check" for="checkbox">Vale transporte incluso</label>
+					<br />
+					<button id="calc">
+						<h3>Calcular</h3>
+					</button>
+				</span>
+				<div id="box1">
+					<h2>RESULTADO:</h2>
+                    <button type="reset" id="reset">
+                        <h3>Resetar</h3>
+					<div class="resultado">
+                        
+                    </div>
+				</div>
+			</div>
+		</main>
+		<footer>
+            <h2>Todos direitos reservados - SquareInx - 2023</h2>
+        </footer>
+	</body>
+	<script src="./js/script.js"></script>
+</html>
