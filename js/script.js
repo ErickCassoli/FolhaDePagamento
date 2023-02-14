@@ -86,9 +86,9 @@ else{
  sLiquido = sBruto - (inssFinal + (irrfFinal + vtFinal))
 console.log(sBruto, inssFinal, irrfFinal,vtFinal, sLiquido)
 document.getElementById('sB').innerHTML = "R$ " +sBruto;
-document.getElementById('INSS').innerHTML = "R$ " + inssFinal;
+document.getElementById('INSS').innerHTML = "R$ " + inssFinal.toFixed(2);
 document.getElementById('IRFF').innerHTML = "R$ " + irrfFinal.toFixed(2);
-document.getElementById('Vt').innerHTML = "R$ " + vtFinal;
+document.getElementById('Vt').innerHTML = "R$ " + vtFinal.toFixed(2);
 document.getElementById('sL').innerHTML = "R$ " + sLiquido.toFixed(2);
 }
 
@@ -96,4 +96,12 @@ function fechar() {
 	//Fechar a box de resultados
 	box1.style.display = "none";
 	box1.style.transitionDuration = "1s";
+	func = 0;
+	inssFinal = 0;
+	irrfFinal = 0;
+	sInss = 0;
+	sLiquido = 0;
+	sBruto = 0;
+	depende = 0;
+	vale = 0;
 }
