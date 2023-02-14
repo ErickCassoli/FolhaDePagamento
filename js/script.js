@@ -85,6 +85,11 @@ else{
 //calculo liquido
  sLiquido = sBruto - (inssFinal + (irrfFinal + vtFinal))
 console.log(sBruto, inssFinal, irrfFinal,vtFinal, sLiquido)
+document.getElementById('sB').innerHTML = "R$ " +sBruto;
+document.getElementById('INSS').innerHTML = "R$ " + inssFinal;
+document.getElementById('IRFF').innerHTML = "R$ " + irrfFinal.toFixed(2);
+document.getElementById('Vt').innerHTML = "R$ " + vtFinal;
+document.getElementById('sL').innerHTML = "R$ " + sLiquido.toFixed(2);
 }
 
 function fechar() {
