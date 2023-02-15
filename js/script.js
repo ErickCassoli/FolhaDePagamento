@@ -40,7 +40,7 @@ if (sBruto < 1302.00){
     
 }
 else if (1302.01 < sBruto && sBruto < 2571.29){
-    sBruto*0.09
+    inssFinal = sBruto*0.09
     sInss = sBruto - inssFinal
 }
 else if (2571.30 < sBruto && sBruto < 3856.94){
