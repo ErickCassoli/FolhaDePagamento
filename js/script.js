@@ -28,7 +28,7 @@ function abrir() {
 	box1.style.fontSize = "22px";
 	box1.style.lineHeight = "170%";
 	box1.style.transitionDuration = "1s";
-	sBruto = document.querySelector("#salarioBruto").value;
+	sBruto = Number(document.querySelector("#salarioBruto").value);
 	depende = document.getElementById("dependentes").value;
 	vale = document.getElementById("vale");
 }
@@ -40,7 +40,7 @@ if (sBruto < 1302.00){
     
 }
 else if (1302.01 < sBruto && sBruto < 2571.29){
-    sBruto*0.09
+    inssFinal = sBruto*0.09
     sInss = sBruto - inssFinal
 }
 else if (2571.30 < sBruto && sBruto < 3856.94){
@@ -82,14 +82,17 @@ if(vale.checked){
 else{
     var vtFinal = sBruto * 0
 }
+
+
+
 //calculo liquido
- sLiquido = sBruto - (inssFinal + (irrfFinal + vtFinal))
+sLiquido = sBruto - (inssFinal + (irrfFinal + vtFinal))
 console.log(sBruto, inssFinal, irrfFinal,vtFinal, sLiquido)
-document.getElementById('sB').innerHTML = "R$ " +sBruto;
-document.getElementById('INSS').innerHTML = "R$ " + inssFinal.toFixed(2);
-document.getElementById('IRFF').innerHTML = "R$ " + irrfFinal.toFixed(2);
-document.getElementById('Vt').innerHTML = "R$ " + vtFinal.toFixed(2);
-document.getElementById('sL').innerHTML = "R$ " + sLiquido.toFixed(2);
+document.getElementById('sB').innerHTML = sBruto.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
+document.getElementById('INSS').innerHTML = inssFinal.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
+document.getElementById('IRFF').innerHTML = irrfFinal.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
+document.getElementById('Vt').innerHTML = vtFinal.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
+document.getElementById('sL').innerHTML = sLiquido.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
 }
 
 function fechar() {
